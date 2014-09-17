@@ -1,5 +1,4 @@
 map{ id = "first_map", description = "First map" }
-map{ id = "tests/traversable", description = "Traversable test area" }
 
 tileset{ id = "castle", description = "Castle" }
 
