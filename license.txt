@@ -1,5 +1,11 @@
-﻿This file gives the license information of all data files of the Solarus
-sample quest (this directory) and testing quest (../tests/testing_quest).
+We give in this file gives the license information of all data files of the
+official Solarus sample quest.
+
+Resources from the sample quest are also used by
+the Solarus testing quest
+(https://github.com/solarus-games/solarus/tree/dev/tests/testing_quest)
+and by the Solarus Quest Editor's initial quest
+(https://github.com/solarus-games/solarus-quest-editor/tree/dev/assets/initial_quest).
 
 Some resources come from communities like OpenGameArt, and others are original
 creations made by us, the Solarus team.
