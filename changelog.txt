@@ -1,7 +1,7 @@
-________________________________________
+_______________________________________
 
-Solarus sample quest 1.5.1 (in progress)
-________________________________________
+Solarus sample quest 1.5.1 (2011-11-29)
+_______________________________________
 
 
 * Add enemies, NPCs, musics and sounds (thanks Diarandor!).
