@@ -1,0 +1,52 @@
+_______________________________________
+
+Solarus sample quest 1.5.1 (2011-11-29)
+_______________________________________
+
+
+* Add enemies, NPCs, musics and sounds (thanks Diarandor!).
+* Add a clickable HUD (thanks Vlag!).
+* Put the solarus logo script in scripts/menus/.
+* Fix wrong hero sprite after game-over.
+
+_______________________________________
+
+Solarus sample quest 1.5.0 (2016-07-27)
+_______________________________________
+
+
+* Update sample quest to Solarus 1.5.
+* Lots of new sprites and sounds from Diarandor.
+
+_______________________________________
+
+Solarus sample quest 1.4.0 (2015-05-02)
+_______________________________________
+
+
+* Update sample quest to Solarus 1.4.
+
+_______________________________________
+
+Solarus sample quest 1.3.0 (2014-08-21)
+_______________________________________
+
+
+* Update sample quest to Solarus 1.3.
+
+_______________________________________
+
+Solarus sample quest 1.2.0 (2014-05-06)
+_______________________________________
+
+
+* Update sample quest to Solarus 1.2.
+
+_______________________________________
+
+Solarus sample quest 1.1.0 (2013-10-13)
+_______________________________________
+
+
+* Add a very short sample quest with free graphics and musics (#232, #318).
+
