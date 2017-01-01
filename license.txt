@@ -1,4 +1,4 @@
-We give in this file gives the license information of all data files of the
+﻿We give in this file gives the license information of all data files of the
 official Solarus sample quest.
 
 Resources from the sample quest are also used by
@@ -62,6 +62,7 @@ sprites/animals/cat_green.png
 sprites/animals/cat_red.png
 sprites/animals/cat_yellow.png
 sprites/animals/chameleon.png
+sprites/animals/crow.png
 sprites/animals/mouse.png
 sprites/animals/phoenix.png
 sprites/citizens/astrologer.png
@@ -73,6 +74,7 @@ sprites/dialogs/DialogEldran.png
 sprites/dialogs/DialogRobyne.png
 sprites/dialogs/DialogOldMen.png
 sprites/enemies/death.png
+sprites/enemies/enemy_killed.png
 sprites/enemies/slime_cyan.png
 sprites/enemies/slime_green.png
 sprites/enemies/slime_purple.png
@@ -165,10 +167,13 @@ sprites/main_heroes/sword_tapping_shield2.png
 sprites/main_heroes/sword_victory.png
 sprites/menus/game_over_menu.png
 sprites/shadows/shadow.png
+sprites/things/broken_vase.png
+sprites/things/dragon_torch_statue.png
 sprites/things/fall_on_hole_effect.png
 sprites/things/grass_effect.png
 sprites/things/lava_splash_effect.png
 sprites/things/switch_aureole.png
+sprites/things/vase.png
 sprites/things/water_splash_effect.png
 sounds/arrow_hit.ogg
 sounds/bird_chirp.ogg

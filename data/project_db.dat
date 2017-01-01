@@ -23,6 +23,7 @@ sprite{ id = "dialogs/dialog_eldran", description = "Eldran Dialog" }
 sprite{ id = "dialogs/dialog_old_man", description = "Old man Dialog" }
 sprite{ id = "dialogs/dialog_old_woman", description = "Old woman Dialog" }
 sprite{ id = "dialogs/dialog_robyne", description = "Robyne Dialog" }
+sprite{ id = "enemies/crow", description = "crow" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
 sprite{ id = "enemies/flame", description = "flame" }
 sprite{ id = "enemies/iceball", description = "iceball" }
@@ -86,6 +87,7 @@ sprite{ id = "things/metal_blacksmith", description = "metal blacksmith" }
 sprite{ id = "things/steam", description = "steam" }
 sprite{ id = "things/switch_aureole", description = "switch aureole" }
 sprite{ id = "things/water_splash_effect", description = "water splash" }
+sprite{ id = "things/wings_evil", description = "wings_evil" }
 
 music{ id = "diarandor/boss", description = "Boss" }
 music{ id = "diarandor/castle", description = "Castle" }
@@ -204,6 +206,8 @@ item{ id = "gem", description = "gem" }
 
 enemy{ id = "animals/chameleon", description = "chameleon" }
 enemy{ id = "citizens/blacksmith", description = "blacksmith" }
+enemy{ id = "crow", description = "crow" }
+enemy{ id = "explosion", description = "explosion" }
 enemy{ id = "flame", description = "flame" }
 enemy{ id = "iceball", description = "iceball" }
 enemy{ id = "slime_cyan", description = "slime cyan" }
