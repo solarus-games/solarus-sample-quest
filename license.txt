@@ -1,4 +1,4 @@
-﻿We give in this file gives the license information of all data files of the
+﻿We give in this file the license information of all data files of the
 official Solarus sample quest.
 
 Resources from the sample quest are also used by
