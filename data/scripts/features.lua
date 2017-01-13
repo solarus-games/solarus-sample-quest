@@ -6,7 +6,7 @@
 -- or uncommenting lines below.
 
 require("scripts/hud/hud")
-require("scripts/menus/mouse_control")
 require("scripts/meta/hero")
+require("scripts/mouse_control")
 
 return true
