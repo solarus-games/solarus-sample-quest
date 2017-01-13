@@ -1,3 +1,11 @@
+________________________________________
+
+Solarus sample quest 1.5.2 (in progress)
+________________________________________
+
+* Add crow enemy by Diarandor.
+* Make scripts more independent to each other.
+
 _______________________________________
 
 Solarus sample quest 1.5.1 (2011-11-29)

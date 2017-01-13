@@ -1,9 +1,19 @@
+-- Script that creates a game ready to be played.
+
+-- Usage:
+-- local game_manager = require("scripts/game_manager")
+-- local game = game_manager:create("savegame_file_name")
+-- game:start()
+
+require("scripts/multi_events")
+local initial_game = require("scripts/initial_game")
 local game_manager = {}
 
-function game_manager:start_game()
+function game_manager:create(file)
 
-  local exists = sol.game.exists("save1.dat")
-  local game = sol.game.load("save1.dat")
+  -- Create the game (but do not start it).
+  local exists = sol.game.exists(file)
+  local game = sol.game.load(file)
   if not exists then
     -- Initialize a new savegame.
     game:set_max_life(12)
@@ -13,23 +23,13 @@ function game_manager:start_game()
     game:set_starting_location("first_map") -- Starting location.
   end
 
-  function game:on_started()
-    -- HUD menu.
-    local hud = require("scripts/menus/hud")
-    sol.menu.start(game, hud)
-    hud:create(game)
-
-    -- Mouse control.
-    local mouse_control = require("scripts/menus/mouse_control")
-    sol.menu.start(game, mouse_control)
-    mouse_control:create(game, hud)
+  game:register_event("on_started", function()
 
     local hero = game:get_hero()
     hero:set_tunic_sprite_id("main_heroes/eldran")
-  end
+  end)
 
-  game:start()
+  return game
 end
 
 return game_manager
-

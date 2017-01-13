@@ -1,84 +1,91 @@
--- Control the hero with the mouse.
-local mouse_control = {}
+-- Allows to control the hero with the mouse.
 
-function mouse_control:create(game, hud)
+-- Usage:
+-- require("scripts/mouse_control")
 
-  self.game = game
-  self.hud = hud
-  self.is_mouse_button_pushed = false
+require("scripts/multi_events")
+
+local deadzone_ray = 10 -- Should be set to the max number of pixel that the hero can move in one frame.
+
+local function initialize_mouse_control_features(game)
+
+  local mouse_control = {}
+
+  local is_mouse_button_pushed = false
 
   -- Movement of the hero.
-  self.directions_pressed = {
+  local directions_pressed = {
       right = false,
       up = false,
       left = false,
       down = false
   }
-  self.deadzone_ray = 10 -- Should be set to the max number of pixel that the hero can move in one frame.
-end
 
-function mouse_control:on_mouse_pressed(button, x, y)
+  function mouse_control:on_mouse_pressed(button, x, y)
 
-  self.is_mouse_button_pushed = true;
-end
-
-function mouse_control:on_mouse_released(button, x, y)
-
-  self.is_mouse_button_pushed = false;
-end
-
-function mouse_control:on_update()
-
-  if self.game == nil or self.game:get_map() == nil then
-    return
+    is_mouse_button_pushed = true
   end
 
-  if self.is_mouse_button_pushed then
+  function mouse_control:on_mouse_released(button, x, y)
 
-    local mouse_x, mouse_y = sol.input.get_mouse_position()
+    is_mouse_button_pushed = false
+  end
 
-    -- If the mouse position is not over a button, move the hero.
-    if self.hud ~= nil and not self.hud:has_button_pushed() then
-      local hero_x, hero_y = self.game:get_hero():get_position()
+  function mouse_control:on_update()
+
+    if game:get_map() == nil then
+      return
+    end
+
+    if is_mouse_button_pushed then
+
+      local mouse_x, mouse_y = sol.input.get_mouse_position()
+      local hero_x, hero_y = game:get_hero():get_position()
 
       -- Compare the position of the hero and the mouse
       -- and simulate the appropriate command for each directions.
-      self:update_direction("right", mouse_x > hero_x + self.deadzone_ray)
-      self:update_direction("up", mouse_y < hero_y - self.deadzone_ray)
-      self:update_direction("left", mouse_x < hero_x - self.deadzone_ray)
-      self:update_direction("down", mouse_y > hero_y + self.deadzone_ray)
-    end
-  else
+      self:update_direction("right", mouse_x > hero_x + deadzone_ray)
+      self:update_direction("up", mouse_y < hero_y - deadzone_ray)
+      self:update_direction("left", mouse_x < hero_x - deadzone_ray)
+      self:update_direction("down", mouse_y > hero_y + deadzone_ray)
+    else
 
-    for direction, _ in pairs(self.directions_pressed) do
+      for direction, _ in pairs(directions_pressed) do
+        self:stop_direction(direction)
+      end
+    end
+  end
+
+  function mouse_control:update_direction(direction, is_movement_needed)
+
+    if is_movement_needed then
+      self:start_direction(direction)
+    else
       self:stop_direction(direction)
     end
   end
-end
 
-function mouse_control:update_direction(direction, is_movement_needed)
+  function mouse_control:start_direction(direction)
 
-  if is_movement_needed then
-    self:start_direction(direction)
-  else
-    self:stop_direction(direction)
+    if not directions_pressed[direction] then
+      directions_pressed[direction] = true
+      game:simulate_command_pressed(direction)
+    end
   end
-end
 
-function mouse_control:start_direction(direction)
+  function mouse_control:stop_direction(direction)
 
-  if not self.directions_pressed[direction] then
-    self.directions_pressed[direction] = true
-    self.game:simulate_command_pressed(direction)
+    if directions_pressed[direction] then
+      directions_pressed[direction] = false
+      game:simulate_command_released(direction)
+    end
   end
+
+  local on_top = false  -- Keep the HUD above in case there are clickable HUD buttons.
+  sol.menu.start(game, mouse_control, on_top)
 end
 
-function mouse_control:stop_direction(direction)
-
-  if self.directions_pressed[direction] then
-    self.directions_pressed[direction] = false
-    self.game:simulate_command_released(direction)
-  end
-end
-
-return mouse_control
+-- Set up the mouse control features on any game that starts.
+local game_meta = sol.main.get_metatable("game")
+game_meta:register_event("on_started", initialize_mouse_control_features)
+return true
