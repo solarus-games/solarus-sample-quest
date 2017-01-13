@@ -7,5 +7,6 @@
 
 require("scripts/hud/hud")
 require("scripts/menus/mouse_control")
+require("scripts/meta/hero")
 
 return true
