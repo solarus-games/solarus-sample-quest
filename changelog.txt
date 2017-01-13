@@ -5,6 +5,7 @@ ________________________________________
 
 * Add crow enemy by Diarandor.
 * Make scripts more independent to each other.
+* Fix moving with the mouse on maps bigger than the camera.
 
 _______________________________________
 

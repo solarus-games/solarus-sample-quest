@@ -33,14 +33,19 @@ local function initialize_mouse_control_features(game)
 
   function mouse_control:on_update()
 
-    if game:get_map() == nil then
+    local map = game:get_map()
+    if map == nil then
       return
     end
 
     if is_mouse_button_pushed then
 
+      local camera = map:get_camera()
+      local hero_x, hero_y = map:get_hero():get_position()
+      local camera_x, camera_y = camera:get_position()
       local mouse_x, mouse_y = sol.input.get_mouse_position()
-      local hero_x, hero_y = game:get_hero():get_position()
+      mouse_x = mouse_x + camera_x
+      mouse_y = mouse_y + camera_y
 
       -- Compare the position of the hero and the mouse
       -- and simulate the appropriate command for each directions.
