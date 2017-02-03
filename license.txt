@@ -37,9 +37,6 @@ items/**.dat                                        Christopho
 
 maps/**.dat                                         Christopho, Diarandor
 
-musics/village.ogg                                  Eduardo Dueñas
-
-
 sprites/entities/bomb.png                           Bertram, adapted from: http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
 sprites/entities/chest.png                          Bertram, adapted from sprites here: http://opengameart.org/content/modified-32x32-treasure-chest, http://opengameart.org/content/jrpg-chests-16-32-64-and-128px-squared
 sprites/entities/explosion.png                      Bertram, adapted from: http://opengameart.org/content/lots-of-free-2d-tiles-and-sprites-by-hyptosis
@@ -52,7 +49,6 @@ sprites/hud/icon_action.png                         Vlag, adapted from: http://o
 sprites/hud/icon_attack.png                         Vlag, adapted from: http://opengameart.org/content/32-star-sprites and http://opengameart.org/content/scimitar-sword
 sprites/hud/icon_item_1.png                         Vlag, adapted from: http://opengameart.org/content/32-star-sprites and http://opengameart.org/content/farming-tool-icons
 
-musics/diarandor/*.ogg                              Diarandor
 
 sounds/arrow_hit.ogg                                Diarandor
 sounds/bird_chirp.ogg                               Diarandor
