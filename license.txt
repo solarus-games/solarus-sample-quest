@@ -4,9 +4,11 @@ the Solarus Sample Quest.
 - Lua scripts are licensed under the terms of the GNU General Public License
 in version 3.
 
-- All data files other than Lua scripts are licensed under
+- Most data files other than Lua scripts are licensed under
 Creative Commons Attribution-ShareAlike 4.0 (CC BY-SA 4.0).
 http://creativecommons.org/licenses/by-sa/4.0/
+
+- A few data files are in public domain.
 
 Most data files of this quest come from the official
 Solarus Free Resource Pack:
@@ -290,8 +292,4 @@ tilesets/castle.tiles.png                           Christopho, adapted from Cha
 tilesets/overworld.dat                              Diarandor, Christopho
 tilesets/overworld.entities.png                     Diarandor, Christopho
 tilesets/overworld.tiles.png                        Diarandor, Christopho
-
-Data files under public domain:                     Author/Origin
--------------------------------                     ------------------------
-text/8_bit.png                                      Christopho, adapted from: http://opengameart.org/content/a-package-of-8-bit-fonts-for-grafx2-and-linux
 
