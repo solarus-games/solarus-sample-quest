@@ -283,8 +283,6 @@ sprites/things/switch_aureole.png                   Diarandor
 sprites/things/vase.png                             Diarandor
 sprites/things/water_splash_effect.png              Diarandor
 
-text/minecraftia.ttf                                Andrew Tyler: http://www.andrewtyler.net
-
 tilesets/castle.dat                                 Christopho
 tilesets/castle.entities.png                        Bertram, adapted from tiles of: http://opengameart.org/content/lpc-tile-atlas
 tilesets/castle.tiles.png                           Christopho, adapted from Challener (Redshrike): http://opengameart.org/content/16x16-indoor-rpg-tileset-the-baseline
