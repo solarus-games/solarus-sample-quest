@@ -29,12 +29,12 @@ https://github.com/solarus-games/solarus-free-resource-pack/blob/master/license.
 We give below the license of all other files of this quest,
 that is, the ones that do not come from the Solarus Free Resource Pack.
 
-Scripts under GNU GPL v3:                           Author/Origin
--------------------------                           ------------------------
+Scripts under GNU GPL v3:                           Author
+-------------------------                           ------
 **.lua                                              Christopho
 
-Data files under CC BY-SA 4.0:                      Author/Origin
-------------------------------                      ------------------------
+Data files under CC BY-SA 4.0:                      Author
+------------------------------                      ------
 items/**.dat                                        Christopho
 
 maps/**.dat                                         Christopho, Diarandor
@@ -50,118 +50,6 @@ sprites/hero/walking.tunic.png                      Christopho, adapted from Ari
 sprites/hud/icon_action.png                         Vlag, adapted from: http://opengameart.org/content/32-star-sprites
 sprites/hud/icon_attack.png                         Vlag, adapted from: http://opengameart.org/content/32-star-sprites and http://opengameart.org/content/scimitar-sword
 sprites/hud/icon_item_1.png                         Vlag, adapted from: http://opengameart.org/content/32-star-sprites and http://opengameart.org/content/farming-tool-icons
-
-
-sounds/arrow_hit.ogg                                Diarandor
-sounds/bird_chirp.ogg                               Diarandor
-sounds/bird_chirp1.ogg                              Diarandor
-sounds/bird_chirp2.ogg                              Diarandor
-sounds/bomb.ogg                                     Diarandor
-sounds/boomerang.ogg                                Diarandor
-sounds/boss_charge.ogg                              Diarandor
-sounds/boss_fireball.ogg                            Diarandor
-sounds/boss_hurt.ogg                                Diarandor
-sounds/boss_killed.ogg                              Diarandor
-sounds/bounce.ogg                                   Diarandor
-sounds/bow.ogg                                      Diarandor
-sounds/bush.ogg                                     Diarandor
-sounds/cane.ogg                                     Diarandor
-sounds/cane2.ogg                                    Diarandor
-sounds/cane3.ogg                                    Diarandor
-sounds/cat.ogg                                      Diarandor
-sounds/chest_appears.ogg                            Diarandor
-sounds/chest_open.ogg                               Diarandor
-sounds/cricket.ogg                                  Diarandor
-sounds/crystal.ogg                                  Diarandor
-sounds/crystal2.ogg                                 Diarandor
-sounds/cursor.ogg                                   Diarandor
-sounds/danger.ogg                                   Diarandor
-sounds/door_closed.ogg                              Diarandor
-sounds/door_open.ogg                                Diarandor
-sounds/door_unlocked.ogg                            Diarandor
-sounds/electrified.ogg                              Diarandor
-sounds/electrified2.ogg                             Diarandor
-sounds/enemy_awake.ogg                              Diarandor
-sounds/enemy_hurt.ogg                               Diarandor
-sounds/enemy_killed.ogg                             Diarandor
-sounds/explosion.ogg                                Diarandor
-sounds/falling_on_hole.ogg                          Diarandor
-sounds/falling_rock.ogg                             Diarandor
-sounds/fire_ball.ogg                                Diarandor
-sounds/fire_ball2.ogg                               Diarandor
-sounds/frost1.ogg                                   Diarandor
-sounds/frost2.ogg                                   Diarandor
-sounds/heart.ogg                                    Diarandor
-sounds/heart_container.ogg                          Diarandor
-sounds/hero_dying.ogg                               Diarandor
-sounds/hero_falls.ogg                               Diarandor
-sounds/hero_hurt.ogg                                Diarandor
-sounds/hero_lands.ogg                               Diarandor
-sounds/hero_pushes.ogg                              Diarandor
-sounds/hero_seen.ogg                                Diarandor
-sounds/hookshot.ogg                                 Diarandor
-sounds/item_fall.ogg                                Diarandor
-sounds/jump.ogg                                     Diarandor
-sounds/key_fall.ogg                                 Diarandor
-sounds/lamp.ogg                                     Diarandor
-sounds/lift.ogg                                     Diarandor
-sounds/magnet1.ogg                                  Diarandor
-sounds/message_end.ogg                              Diarandor
-sounds/message_letter.ogg                           Diarandor
-sounds/mouse.ogg                                    Diarandor
-sounds/ok.ogg                                       Diarandor
-sounds/open_lock.ogg                                Diarandor
-sounds/pause_closed.ogg                             Diarandor
-sounds/pause_open.ogg                               Diarandor
-sounds/picked_item.ogg                              Diarandor
-sounds/picked_rupee.ogg                             Diarandor
-sounds/picked_small_key.ogg                         Diarandor
-sounds/quake.ogg                                    Diarandor
-sounds/running.ogg                                  Diarandor
-sounds/running_obstacle.ogg                         Diarandor
-sounds/rupee_counter.ogg                            Diarandor
-sounds/rupee_counter_end.ogg                        Diarandor
-sounds/secret.ogg                                   Eduardo Dueñas
-sounds/shield.ogg                                   Diarandor
-sounds/shield2.ogg                                  Diarandor
-sounds/shield3.ogg                                  Diarandor
-sounds/soft_tap.ogg                                 Diarandor
-sounds/splash.ogg                                   Diarandor
-sounds/stairs_down_end.ogg                          Diarandor
-sounds/stairs_down_start.ogg                        Diarandor
-sounds/stairs_up_end.ogg                            Diarandor
-sounds/stairs_up_start.ogg                          Diarandor
-sounds/stone.ogg                                    Diarandor
-sounds/swim.ogg                                     Diarandor
-sounds/switch.ogg                                   Diarandor
-sounds/switch_hero.ogg                              Diarandor
-sounds/sword_spin_attack_load.ogg                   Diarandor
-sounds/sword_spin_attack_release.ogg                Diarandor
-sounds/sword_tapping.ogg                            Diarandor
-sounds/sword_tapping_weak_wall.ogg                  Diarandor
-sounds/sword1.ogg                                   Diarandor
-sounds/sword2.ogg                                   Diarandor
-sounds/sword3.ogg                                   Diarandor
-sounds/sword4.ogg                                   Diarandor
-sounds/teleporter.ogg                               Diarandor
-sounds/throw.ogg                                    Diarandor
-sounds/timer.ogg                                    Diarandor
-sounds/timer_hurry.ogg                              Diarandor
-sounds/timer2.ogg                                   Diarandor
-sounds/tongue.ogg                                   Diarandor
-sounds/treasure.ogg                                 Diarandor
-sounds/victory.ogg                                  Diarandor
-sounds/walk_on_grass.ogg                            Diarandor
-sounds/walk_on_water.ogg                            Diarandor
-sounds/warp.ogg                                     Diarandor
-sounds/water_fill.ogg                               Diarandor
-sounds/wings1.ogg                                   Diarandor
-sounds/wings2.ogg                                   Diarandor
-sounds/world_warp.ogg                               Diarandor
-sounds/wrong.ogg                                    Diarandor
-sounds/wrong2.ogg                                   Diarandor
-sounds/wrong3.ogg                                   Diarandor
-sounds/zora.ogg                                     Diarandor
 
 sprites/animals/birds.png                           Diarandor
 sprites/animals/butterfly.png                       Diarandor
