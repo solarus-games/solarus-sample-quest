@@ -3,7 +3,9 @@ ________________________________________
 Solarus sample quest 1.5.2 (in progress)
 ________________________________________
 
+* Play a sound with the Solarus logo.
 * Add crow enemy by Diarandor.
+* Add thunder and bird sounds by Diarandor.
 * Make scripts more independent to each other.
 * Fix moving with the mouse on maps bigger than the camera.
 
