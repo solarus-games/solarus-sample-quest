@@ -24,7 +24,7 @@ function entity:on_interaction()
   local h = self:get_map():get_hero()
   local dir = self:get_direction4_to(h)
   self:set_direction(dir)
-  self:start_dialog() -- Start dialog. 
+  self:start_dialog() -- Start dialog.
 end
 
 -- Function to simulate jumps.
@@ -42,8 +42,8 @@ local function jump(properties, callback)
     sprite:set_xy(0, -f(t))
     t = t + refreshing_time
     if t > jump_duration then
-      if callback then callback() end 
-      return false 
+      if callback then callback() end
+      return false
     else return true end
   end)
   -- Create movement.
@@ -64,13 +64,13 @@ function entity:start_forging()
   self:set_direction(2)
   local metal = self:get_map():get_entity("metal")
   local tx, ty = self:get_position()
-  local prop_low_jump = {entity_jumping = metal, max_height = 8, 
+  local prop_low_jump = {entity_jumping = metal, max_height = 8,
     jump_duration = 250, dx = 0, dy = 0}
-  local prop_high_jump = {entity_jumping = metal, max_height = 24, 
+  local prop_high_jump = {entity_jumping = metal, max_height = 24,
     jump_duration = 1500, dx = 16, dy = -8}
   local sprite_blacksmith = self:get_sprite()
   sol.timer.start(self, 2000, function() -- Make the metal jump.
-    remaining_hits = remaining_hits - 1  
+    remaining_hits = remaining_hits - 1
     sprite_blacksmith:set_animation("forge", function()
       sprite_blacksmith:set_animation("forge_end")
       sol.audio.play_sound("bomb")
@@ -96,7 +96,7 @@ function entity:start_forging()
             sprite_blacksmith:set_direction(0)
             sprite_blacksmith:set_animation("hurt_hammer") -- Start hurt with hammer animation.
             sol.audio.play_sound("enemy_hurt")
-            sol.timer.start(entity, 3000, function() 
+            sol.timer.start(entity, 3000, function()
               -- Callback: return back to normal.
               sprite_blacksmith:set_animation("stopped")
               sprite_blacksmith:set_direction(3)
@@ -109,6 +109,6 @@ function entity:start_forging()
         end)
       end
     end)
-    if remaining_hits > 0 then return true end -- Continue forging.     
-  end) 
+    if remaining_hits > 0 then return true end -- Continue forging.
+  end)
 end

@@ -33,7 +33,7 @@ function entity:create_card()
   local x, y, layer = self:get_position()
   local refreshing_time = 10 -- Refreshing time for positions of cards, given in milliseconds.
   local a0 = 7 * math.pi / 4 -- Initial angle, in radians.
-  local prop_card = {x = x, y = y, layer = layer + 1, 
+  local prop_card = {x = x, y = y, layer = layer + 1,
     direction = 0, width = 16, height = 16, sprite = "things/magic_deck", name = "card"}
   -- Initialize variables.
   local card = self:get_map():create_custom_entity(prop_card)
@@ -58,7 +58,7 @@ function entity:create_card()
   function card:update_frame()
     local interval_angle_length = 2 * math.pi / num_f
     local f = math.floor( (a + (1/2) * interval_angle_length) / interval_angle_length )
-    f = (f + 3) % 12 
+    f = (f + 3) % 12
     card:get_sprite():set_frame(f)
   end
   function card:update_position()
@@ -82,7 +82,7 @@ end
 
 -- Functions to modify the trajectory of each card.
 function entity:start_moving_card_1(card)
-  local axis_max_x, axis_max_y = 96, 32 -- 128, 64 -- Max axes for the ellipse. 
+  local axis_max_x, axis_max_y = 96, 32 -- 128, 64 -- Max axes for the ellipse.
   local t = 0 -- Initial time, in milliseconds.
   local dt = 100 -- Time between changes of trajectory.
   sol.timer.start(card, dt, function()
@@ -108,18 +108,18 @@ function entity:start_moving_card_2()
     sol.timer.start(card, dtt, function()
       local axes_angle = card:get_axes_angle()
       axes_angle = (axes_angle + axes_angular_speed * dtt) % (2 * math.pi)
-      card:set_axes_angle(axes_angle)   
+      card:set_axes_angle(axes_angle)
       return true
     end)
     sol.timer.start(card, 1000, function()
       local dt = 50 -- Time between changes of trajectory.
       local new_ax, new_ay = 32, 16
       sol.timer.start(card, dt, function()
-        local ax, ay = card:get_axes()  
+        local ax, ay = card:get_axes()
         ax = math.max(ax - 2, new_ax)
         ay = math.max(ay - 1, new_ay)
         card:set_axes(ax, ay)
-        if ax >= new_ax or ay >= new_ay then return true 
+        if ax >= new_ax or ay >= new_ay then return true
         else card:set_angular_speed(3 * math.pi / 1000) -- Accelerate!
         end
       end)

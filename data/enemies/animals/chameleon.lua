@@ -3,7 +3,7 @@ local enemy = ...
 local sprite, tongue -- Main sprites.
 
 function enemy:on_created()
-  -- Set properties. 
+  -- Set properties.
   self:set_life(1); self:set_damage(1); self:set_hurt_style("normal")
   self:set_pushed_back_when_hurt(true); self:set_push_hero_on_sword(false)
   self:set_traversable(true)
@@ -22,7 +22,7 @@ function enemy:on_restarted()
   sprite:set_direction(math.random(4)-1) -- Random direction.
   -- Start random actions. Start checking hero.
   sol.timer.start(self, 2000, function() self:random(); return true end)
-  self:check_hero() 
+  self:check_hero()
 end
 
 function enemy:check_hero()
@@ -70,7 +70,7 @@ function enemy:attack()
   tongue = self:create_sprite("animals/chameleon")
   local dir = sprite:get_direction()
   local dx,dy = -4,-13
-  if dir%2 == 0 then dx = 24*math.cos(dir*math.pi/2) -4 
+  if dir%2 == 0 then dx = 24*math.cos(dir*math.pi/2) -4
   else dy = -24*math.sin(dir*math.pi/2) -13 end
   tongue:set_xy(dx,dy); tongue:set_direction(dir)
   -- Attack animation and sound.
@@ -79,9 +79,9 @@ function enemy:attack()
   sol.audio.play_sound("tongue")
   -- Destroy tongue after attack and restart enemy.
   function sprite:on_animation_finished()
-    if tongue then 
-	  enemy:remove_sprite(tongue) 
-	  tongue = nil  
+    if tongue then
+	  enemy:remove_sprite(tongue)
+	  tongue = nil
 	end
     enemy:restart()
   end

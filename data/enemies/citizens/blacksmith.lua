@@ -47,7 +47,7 @@ local function quake()
     if it <= number_quakes then
       dir = 1 - dir; it = it + 1 -- Update direction and iterator for next quake.
       return true
-    else 
+    else
       -- Last camera movement:
       local m = create_movement(dir)
       m:set_max_distance(3)
@@ -74,7 +74,7 @@ local function jump(properties)
   sol.timer.start(e, refreshing_time, function() -- Update shift each 10 milliseconds.
     sprite:set_xy(0, -f(t))
     t = t + refreshing_time
-    if t > jump_duration then return false 
+    if t > jump_duration then return false
     else return true end
   end)
   -- Create movement.
@@ -103,11 +103,11 @@ local function jump(properties)
         enemy:get_sprite():set_animation("stomp")
         quake() -- Start quake effect.
         sol.timer.start(enemy, 500, function()
-          enemy:set_default_attack_consequences() -- Stop invincibility.        
+          enemy:set_default_attack_consequences() -- Stop invincibility.
           enemy:restart() -- Restart after the jump.
         end)
       end)
-    end) 
+    end)
   end)
 end
 
@@ -148,7 +148,7 @@ function enemy:jump_to_hero()
     enemy:get_sprite():set_direction(dir)
   end
   m:start(enemy)
-  sol.timer.start(enemy, 500, function() 
+  sol.timer.start(enemy, 500, function()
     enemy:stop_movement()
     enemy:jump()
   end)
@@ -191,12 +191,12 @@ function enemy:on_hurt()
     else -- Restore speed and start phase 2.
       phase = 2; speed = 50; self:restart()
       self:set_damage(2)
-    end 
+    end
   elseif phase == 2 then
     if current_jump_duration > 1000 then
       current_jump_duration = current_jump_duration - 250 -- Increase jump speed when hurt.
     else -- Start phase 3.
-      phase = 3; speed = 60; self:restart() 
+      phase = 3; speed = 60; self:restart()
       self:set_damage(4)
     end
   elseif phase == 3 then -- Remove hammer sprite after hurt, if any.

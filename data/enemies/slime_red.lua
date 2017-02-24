@@ -22,7 +22,7 @@ function enemy:on_created()
   self:set_pushed_back_when_hurt(false)
   self:set_push_hero_on_sword(true)
   self:set_obstacle_behavior("flying") -- Allow to traverse bad grounds (and fall on them).
-  local sprite = self:get_sprite() 
+  local sprite = self:get_sprite()
   if not sprite then sprite = self:create_sprite("enemies/slime_red") end
   state = "hidden"
   function sprite:on_animation_finished(animation)
@@ -148,8 +148,8 @@ function enemy:jump()
   sol.timer.start(self, refreshing_time, function() -- Update shift each 10 milliseconds.
     sprite:set_xy(0, -f(t))
     t = t + refreshing_time
-    if t > jump_duration then return false 
-      else return true 
+    if t > jump_duration then return false
+      else return true
     end
   end)
   -- Add a shadow sprite.
@@ -189,7 +189,7 @@ function enemy:check_on_ground()
   local px, py, layer = self:get_position()
   local x, y, layer = self:get_ground_position()
   local ground = self:get_ground_below()
-  if ground == "empty" and layer > 0 then 
+  if ground == "empty" and layer > 0 then
     -- Fall to lower layer and check ground again.
      self:set_position(px, py, layer-1)
      self:check_on_ground() -- Check again new ground.
@@ -205,7 +205,7 @@ function enemy:check_on_ground()
     sol.audio.play_sound("falling_on_hole")
   elseif ground == "deep_water" then
     -- Sink in water.
-    local water_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})    
+    local water_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
     local sprite = water_splash:create_sprite("ground_effects/water_splash_effect")
     sprite:set_animation("water_splash")
     self:remove()
@@ -213,7 +213,7 @@ function enemy:check_on_ground()
     sol.audio.play_sound("splash")
   elseif ground == "lava" then
     -- Sink in lava.
-    local lava_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})    
+    local lava_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
     local sprite = lava_splash:create_sprite("ground_effects/lava_splash_effect")
     sprite:set_animation("lava_splash")
     self:remove()
@@ -245,7 +245,7 @@ function enemy:throw_fireball()
   local a2 = (2 * math.random() - 1) * math.pi / 4 -- Random angle between -45º and 45º.
   a = a + a2 -- Modify angle with random perturbation.
   local x, y, layer = self:get_position()
-  local prop = {x = x, y = y, layer = layer, direction = 0, 
+  local prop = {x = x, y = y, layer = layer, direction = 0,
     width = 8, height = 8, sprite = "enemies/slime_red"}
   local fireball = map:create_custom_entity(prop)
   fireball:get_sprite():set_animation("fireball")
@@ -268,8 +268,8 @@ function enemy:throw_fireball()
   sol.timer.start(fireball, refreshing_time, function() -- Update shift each 10 milliseconds.
     fireball:get_sprite():set_xy(0, -f(t))
     t = t + refreshing_time
-    if t > fireball_duration then return false 
-      else return true 
+    if t > fireball_duration then return false
+      else return true
     end
   end)
   -- Play fireball sound.

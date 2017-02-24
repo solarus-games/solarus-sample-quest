@@ -1,6 +1,6 @@
 -- Enemy crow script.
 
--- These enemies can throw entities like pots. 
+-- These enemies can throw entities like pots.
 -- For customization, modify the list "throwable_entities".
 -- Enemies of type explosion are required for explosions of thrown things.
 
@@ -36,7 +36,7 @@ function enemy:on_created()
   shadow = self:get_map():create_custom_entity(prop)
   shadow_sprite = shadow:create_sprite("shadows/shadow_huge_dynamic")
   -- Do not use the animation. Frames are calculated depending on the height.
-  shadow_sprite:set_frame_delay(100000) 
+  shadow_sprite:set_frame_delay(100000)
   -- Make shadow follow the crow.
   sol.timer.start(shadow, 10, function()
     shadow:set_position(self:get_position())
@@ -65,7 +65,7 @@ function enemy:wait_for_hero()
   state = "waiting"
   sprite:set_animation("stopped")
   local hero = map:get_hero()
-  sol.timer.start(self, 10, function() 
+  sol.timer.start(self, 10, function()
     local dist = self:get_distance(hero)
     if dist <= detection_distance then
       self:prepare_attack()
@@ -108,7 +108,7 @@ function enemy:prepare_attack()
     else
       -- Go for nearby throwable if any, or attack otherwise.
       if throwable then
-        self:go_for_throwable()  
+        self:go_for_throwable()
       else
         self:attack_hero()
       end
@@ -148,7 +148,7 @@ function enemy:attack_hero()
   function m:on_finished() enemy:prepare_attack() end
   m:start(enemy)
   -- Create descending movement (shift the sprite).
-  local max_duration = math.floor(1000 * max_distance / movement_speed) -- In milliseconds.  
+  local max_duration = math.floor(1000 * max_distance / movement_speed) -- In milliseconds.
   local descend_delay = math.floor(max_duration / flying_height) -- In milliseconds.
   descend_delay = math.max(descend_delay, 10) -- Necessary if the enemy is too close (to slow down!).
   sol.timer.start(self, descend_delay, function()
@@ -214,7 +214,7 @@ function enemy:get_destructible_nearby()
   y = y - d
   local destructible
   for e in map:get_entities_in_rectangle(x, y, width, height) do
-    if self:can_lift(e) then 
+    if self:can_lift(e) then
       if not destructible then
         destructible = e
       else
@@ -239,7 +239,7 @@ function enemy:go_for_throwable()
   layer = map:get_max_layer()
   self:set_position(x, y, layer)
   -- If we have reached the throwable, descend ot lift it.
-  local max_duration = 500 -- Descent speed, in milliseconds.  
+  local max_duration = 500 -- Descent speed, in milliseconds.
   local descend_delay = math.floor(max_duration / flying_height) -- In milliseconds.
   function m:on_finished()
     m:stop() -- Stop target movement!
@@ -356,7 +356,7 @@ end
 function enemy:throw_item()
   state = "throwing"
   -- Wait before restarting behavior.
-  local delay = 500 
+  local delay = 500
   sol.timer.start(self, 2000, function()
     self:prepare_attack()
   end)

@@ -3,18 +3,18 @@ local game = map:get_game()
 
 function map:on_started()
   -- Remove the blacksmith if he is waiting in the fighting room.
-  if game:get_value("blacksmith") == 1 then 
+  if game:get_value("blacksmith") == 1 then
     blacksmith:remove()
     metal:remove()
     steam:remove()
   end
 end
 
---[[ 
+--[[
 --------Blacksmith dialogs:
 1- Welcome.
 2- Propose battle.
-3- Refuse battle. 
+3- Refuse battle.
 4- Accept battle.
 5- En garde!
 6- Congrats after battle.
