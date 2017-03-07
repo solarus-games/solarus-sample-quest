@@ -1,6 +1,6 @@
 animation{
   name = "closed",
-  src_image = "entities/Door.png",
+  src_image = "entities/door.png",
   directions = {
     { x = 16, y = 0, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8 },
     { x = 16, y = 0, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8 },
@@ -10,7 +10,7 @@ animation{
 }
 animation{
   name = "closing",
-  src_image = "entities/Door.png",
+  src_image = "entities/door.png",
   frame_delay = 100,
   directions = {
     { x = 32, y = 0, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8 },
@@ -21,7 +21,7 @@ animation{
 }
 animation{
   name = "opening",
-  src_image = "entities/Door.png",
+  src_image = "entities/door.png",
   frame_delay = 100,
   directions = {
     { x = 0, y = 0, frame_width = 16, frame_height = 24, origin_x = 0, origin_y = 8 },
