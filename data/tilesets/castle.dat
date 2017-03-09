@@ -1250,6 +1250,86 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "211",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 136,
+  y = 272,
+  width = 8,
+  height = 24,
+}
+
+tile_pattern{
+  id = "212",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 144,
+  y = 272,
+  width = 8,
+  height = 24,
+}
+
+tile_pattern{
+  id = "213",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 152,
+  y = 272,
+  width = 8,
+  height = 24,
+}
+
+tile_pattern{
+  id = "214",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 160,
+  y = 272,
+  width = 8,
+  height = 24,
+}
+
+tile_pattern{
+  id = "215",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 168,
+  y = 272,
+  width = 8,
+  height = 24,
+}
+
+tile_pattern{
+  id = "216",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 176,
+  y = 272,
+  width = 8,
+  height = 24,
+}
+
+tile_pattern{
+  id = "217",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 184,
+  y = 272,
+  width = 8,
+  height = 24,
+}
+
+tile_pattern{
+  id = "218",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 192,
+  y = 272,
+  width = 8,
+  height = 24,
+}
+
+tile_pattern{
   id = "22",
   ground = "low_wall",
   default_layer = 0,
