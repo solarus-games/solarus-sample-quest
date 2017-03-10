@@ -1330,6 +1330,16 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "219",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 200,
+  y = 272,
+  width = 24,
+  height = 24,
+}
+
+tile_pattern{
   id = "22",
   ground = "low_wall",
   default_layer = 0,
@@ -1337,6 +1347,26 @@ tile_pattern{
   y = 40,
   width = 16,
   height = 24,
+}
+
+tile_pattern{
+  id = "220",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 224,
+  y = 272,
+  width = 32,
+  height = 24,
+}
+
+tile_pattern{
+  id = "221",
+  ground = "low_wall",
+  default_layer = 0,
+  x = 256,
+  y = 264,
+  width = 32,
+  height = 32,
 }
 
 tile_pattern{
