@@ -1,0 +1,14 @@
+animation{
+  name = "closed",
+  src_image = "entities/gold_chest.png",
+  directions = {
+    { x = 0, y = 0, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 12 },
+  },
+}
+animation{
+  name = "open",
+  src_image = "entities/gold_chest.png",
+  directions = {
+    { x = 24, y = 0, frame_width = 24, frame_height = 16, origin_x = 12, origin_y = 12 },
+  },
+}
