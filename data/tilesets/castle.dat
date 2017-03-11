@@ -1930,6 +1930,56 @@ tile_pattern{
 }
 
 tile_pattern{
+  id = "273",
+  ground = "traversable",
+  default_layer = 0,
+  x = 264,
+  y = 296,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "274",
+  ground = "traversable",
+  default_layer = 0,
+  x = 264,
+  y = 312,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "275",
+  ground = "traversable",
+  default_layer = 0,
+  x = 240,
+  y = 328,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "276",
+  ground = "traversable",
+  default_layer = 0,
+  x = 256,
+  y = 328,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
+  id = "277",
+  ground = "traversable",
+  default_layer = 0,
+  x = 272,
+  y = 328,
+  width = 16,
+  height = 16,
+}
+
+tile_pattern{
   id = "28",
   ground = "wall",
   default_layer = 1,
