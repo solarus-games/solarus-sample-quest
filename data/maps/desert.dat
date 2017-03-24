@@ -1973,7 +1973,7 @@ tile{
 tile{
   layer = 0,
   x = 32,
-  y = 400,
+  y = 392,
   width = 8,
   height = 8,
   pattern = "105",
@@ -1982,7 +1982,7 @@ tile{
 tile{
   layer = 0,
   x = 112,
-  y = 400,
+  y = 392,
   width = 8,
   height = 8,
   pattern = "109",
@@ -1991,7 +1991,7 @@ tile{
 tile{
   layer = 0,
   x = 40,
-  y = 400,
+  y = 392,
   width = 72,
   height = 8,
   pattern = "93",
@@ -2002,7 +2002,7 @@ tile{
   x = 32,
   y = 368,
   width = 8,
-  height = 32,
+  height = 24,
   pattern = "83",
 }
 
@@ -2011,7 +2011,7 @@ tile{
   x = 112,
   y = 368,
   width = 8,
-  height = 32,
+  height = 24,
   pattern = "97",
 }
 
@@ -2020,7 +2020,7 @@ tile{
   x = 40,
   y = 368,
   width = 72,
-  height = 32,
+  height = 24,
   pattern = "101",
 }
 
@@ -2081,7 +2081,7 @@ tile{
 tile{
   layer = 0,
   x = 80,
-  y = 344,
+  y = 328,
   width = 8,
   height = 8,
   pattern = "75",
@@ -2090,7 +2090,7 @@ tile{
 tile{
   layer = 0,
   x = 96,
-  y = 344,
+  y = 328,
   width = 8,
   height = 8,
   pattern = "76",
@@ -2099,7 +2099,7 @@ tile{
 tile{
   layer = 0,
   x = 88,
-  y = 344,
+  y = 328,
   width = 8,
   height = 8,
   pattern = "68",
@@ -2159,6 +2159,42 @@ tile{
   pattern = "84",
 }
 
+tile{
+  layer = 0,
+  x = 160,
+  y = 112,
+  width = 16,
+  height = 16,
+  pattern = "91",
+}
+
+tile{
+  layer = 0,
+  x = 40,
+  y = 360,
+  width = 72,
+  height = 8,
+  pattern = "126",
+}
+
+tile{
+  layer = 0,
+  x = 32,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 360,
+  width = 8,
+  height = 8,
+  pattern = "70",
+}
+
 destination{
   name = "destination",
   layer = 0,
@@ -2215,33 +2251,6 @@ door{
 
 tile{
   layer = 1,
-  x = 32,
-  y = 360,
-  width = 8,
-  height = 8,
-  pattern = "14",
-}
-
-tile{
-  layer = 1,
-  x = 112,
-  y = 360,
-  width = 8,
-  height = 8,
-  pattern = "70",
-}
-
-tile{
-  layer = 1,
-  x = 40,
-  y = 360,
-  width = 72,
-  height = 8,
-  pattern = "126",
-}
-
-tile{
-  layer = 1,
   x = 24,
   y = 336,
   width = 24,
@@ -2261,7 +2270,7 @@ tile{
 tile{
   layer = 1,
   x = 96,
-  y = 336,
+  y = 320,
   width = 8,
   height = 8,
   pattern = "73",
@@ -2270,7 +2279,7 @@ tile{
 tile{
   layer = 1,
   x = 88,
-  y = 336,
+  y = 320,
   width = 8,
   height = 8,
   pattern = "72",
@@ -2279,7 +2288,7 @@ tile{
 tile{
   layer = 1,
   x = 80,
-  y = 336,
+  y = 320,
   width = 8,
   height = 8,
   pattern = "74",

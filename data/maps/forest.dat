@@ -2798,6 +2798,33 @@ tile{
   pattern = "165",
 }
 
+tile{
+  layer = 0,
+  x = 104,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "14",
+}
+
+tile{
+  layer = 0,
+  x = 112,
+  y = 144,
+  width = 32,
+  height = 8,
+  pattern = "126",
+}
+
+tile{
+  layer = 0,
+  x = 144,
+  y = 144,
+  width = 8,
+  height = 8,
+  pattern = "70",
+}
+
 door{
   layer = 0,
   x = 32,
@@ -3138,33 +3165,6 @@ tile{
   width = 32,
   height = 32,
   pattern = "125",
-}
-
-tile{
-  layer = 1,
-  x = 104,
-  y = 144,
-  width = 8,
-  height = 8,
-  pattern = "14",
-}
-
-tile{
-  layer = 1,
-  x = 144,
-  y = 144,
-  width = 8,
-  height = 8,
-  pattern = "70",
-}
-
-tile{
-  layer = 1,
-  x = 112,
-  y = 144,
-  width = 32,
-  height = 8,
-  pattern = "126",
 }
 
 tile{
