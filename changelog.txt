@@ -1,6 +1,6 @@
 ________________________________________
 
-Solarus sample quest 1.5.2 (in progress)
+Solarus sample quest 1.5.2 (2017-04-03)
 ________________________________________
 
 * Play a sound with the Solarus logo.
