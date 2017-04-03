@@ -54,7 +54,7 @@ function enemy:on_restarted()
     right_wing:set_direction(3)
   else
     left_wing:set_direction(0)
-    right_wing:set_direction(1)  
+    right_wing:set_direction(1)
   end
   if state == "falling" then self:fall(); return end -- Do nothing more while falling.
   -- Start checking for hero.
@@ -280,7 +280,7 @@ function enemy:start_wind()
   sol.audio.play_sound("wings1")
   -- Push the hero if he is close to the wind.
   local wind_timer = sol.timer.start(self, 30, function()
-    if self:get_distance(h) <= wind_distance 
+    if self:get_distance(h) <= wind_distance
     and h:get_state() ~= "frozen" then
       local d = self:get_direction8_to(h)
       local x, y, layer = h:get_position()

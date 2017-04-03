@@ -61,7 +61,7 @@ function enemy:jump(jump_angle)
     sprite:set_xy(0, -f(t))
     t = t + refreshing_time
     if t <= jump_duration then
-      return true 
+      return true
     else
       self:remove_sprite(shadow)
       self:set_can_attack(true) -- Allow to attack after jump.

@@ -27,7 +27,7 @@ function enemy:on_restarted()
       local slime = map:create_enemy(prop)
       slime:set_egg_enabled(false) -- Do not allow to procreate again.
       slime:jump() -- Start jump when created.
-      self:remove() 
+      self:remove()
     end)
   end)
 end
