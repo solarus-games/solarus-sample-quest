@@ -183,7 +183,7 @@ enemy{
   x = 32,
   y = 37,
   direction = 0,
-  breed = "slime_green",
+  breed = "diarandor/slime_green",
 }
 
 enemy{
@@ -191,7 +191,7 @@ enemy{
   x = 296,
   y = 37,
   direction = 0,
-  breed = "slime_green",
+  breed = "diarandor/slime_green",
 }
 
 teletransporter{
@@ -208,7 +208,7 @@ enemy{
   x = 120,
   y = 61,
   direction = 0,
-  breed = "animals/chameleon",
+  breed = "diarandor/animals/chameleon",
 }
 
 enemy{
@@ -216,7 +216,7 @@ enemy{
   x = 240,
   y = 53,
   direction = 0,
-  breed = "animals/chameleon",
+  breed = "diarandor/animals/chameleon",
 }
 
 enemy{
@@ -224,7 +224,7 @@ enemy{
   x = 40,
   y = 85,
   direction = 0,
-  breed = "animals/chameleon",
+  breed = "diarandor/animals/chameleon",
 }
 
 enemy{
@@ -232,7 +232,7 @@ enemy{
   x = 184,
   y = 77,
   direction = 0,
-  breed = "slime_yellow",
+  breed = "diarandor/slime_yellow",
 }
 
 enemy{
@@ -240,7 +240,7 @@ enemy{
   x = 72,
   y = 117,
   direction = 0,
-  breed = "slime_yellow",
+  breed = "diarandor/slime_yellow",
 }
 
 enemy{
@@ -248,7 +248,7 @@ enemy{
   x = 248,
   y = 133,
   direction = 0,
-  breed = "slime_yellow",
+  breed = "diarandor/slime_yellow",
 }
 
 enemy{
@@ -256,7 +256,7 @@ enemy{
   x = 272,
   y = 85,
   direction = 0,
-  breed = "slime_yellow",
+  breed = "diarandor/slime_yellow",
 }
 
 enemy{
@@ -264,7 +264,7 @@ enemy{
   x = 120,
   y = 37,
   direction = 0,
-  breed = "slime_green",
+  breed = "diarandor/slime_green",
 }
 
 teletransporter{

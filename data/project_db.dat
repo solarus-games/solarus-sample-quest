@@ -7,33 +7,57 @@ map{ id = "first_map", description = "First map" }
 
 tileset{ id = "castle", description = "Castle" }
 
-sprite{ id = "animals/bird_red", description = "Red Bird" }
-sprite{ id = "animals/cat_green", description = "Green Cat" }
-sprite{ id = "animals/cat_red", description = "Red Cat" }
-sprite{ id = "animals/cat_yellow", description = "Yellow Cat" }
-sprite{ id = "animals/chameleon", description = "Chameleon" }
-sprite{ id = "animals/mouse", description = "Mouse" }
-sprite{ id = "animals/phoenix", description = "Phoenix" }
-sprite{ id = "citizens/astrologer", description = "astrologer" }
-sprite{ id = "citizens/blacksmith", description = "blacksmith" }
-sprite{ id = "citizens/old_man", description = "old man" }
-sprite{ id = "citizens/old_woman", description = "old Woman" }
-sprite{ id = "citizens/witch", description = "witch" }
-sprite{ id = "dialogs/dialog_eldran", description = "Eldran Dialog" }
-sprite{ id = "dialogs/dialog_old_man", description = "Old man Dialog" }
-sprite{ id = "dialogs/dialog_old_woman", description = "Old woman Dialog" }
-sprite{ id = "dialogs/dialog_robyne", description = "Robyne Dialog" }
-sprite{ id = "enemies/crow", description = "crow" }
+sprite{ id = "diarandor/animals/bird_red", description = "Red Bird" }
+sprite{ id = "diarandor/animals/cat_green", description = "Green Cat" }
+sprite{ id = "diarandor/animals/cat_red", description = "Red Cat" }
+sprite{ id = "diarandor/animals/cat_yellow", description = "Yellow Cat" }
+sprite{ id = "diarandor/animals/chameleon", description = "Chameleon" }
+sprite{ id = "diarandor/animals/mouse", description = "Mouse" }
+sprite{ id = "diarandor/animals/phoenix", description = "Phoenix" }
+sprite{ id = "diarandor/citizens/astrologer", description = "Astrologer" }
+sprite{ id = "diarandor/citizens/blacksmith", description = "Blacksmith" }
+sprite{ id = "diarandor/citizens/old_man", description = "Old man" }
+sprite{ id = "diarandor/citizens/old_woman", description = "Old Woman" }
+sprite{ id = "diarandor/citizens/witch", description = "Witch" }
+sprite{ id = "diarandor/dialogs/dialog_eldran", description = "Eldran Dialog" }
+sprite{ id = "diarandor/dialogs/dialog_old_man", description = "Old man Dialog" }
+sprite{ id = "diarandor/dialogs/dialog_old_woman", description = "Old woman Dialog" }
+sprite{ id = "diarandor/dialogs/dialog_robyne", description = "Robyne Dialog" }
+sprite{ id = "diarandor/heroes/eldran", description = "Eldran" }
+sprite{ id = "diarandor/heroes/robyne", description = "Robyne" }
+sprite{ id = "diarandor/heroes/sword", description = "Sword" }
+sprite{ id = "diarandor/heroes/sword_electricity", description = "Sword electricity" }
+sprite{ id = "diarandor/heroes/trail", description = "Trail" }
+sprite{ id = "diarandor/shadows/shadow_big", description = "Big shadow" }
+sprite{ id = "diarandor/shadows/shadow_big_dynamic", description = "Big dynamic shadow" }
+sprite{ id = "diarandor/shadows/shadow_huge_dynamic", description = "Huge dynamic shadow" }
+sprite{ id = "diarandor/shadows/shadow_small", description = "Small shadow" }
+sprite{ id = "diarandor/things/anvil_blacksmith", description = "Anvil blacksmith" }
+sprite{ id = "diarandor/things/broom", description = "Broom witch" }
+sprite{ id = "diarandor/things/fall_on_hole_effect", description = "Fall on hole" }
+sprite{ id = "diarandor/things/grass_effect", description = "Grass effect" }
+sprite{ id = "diarandor/things/ice_block", description = "Ice block" }
+sprite{ id = "diarandor/things/lava_splash_effect", description = "Lava splash" }
+sprite{ id = "diarandor/things/long_chair", description = "Long chair witch" }
+sprite{ id = "diarandor/things/magic_ball", description = "Magic ball" }
+sprite{ id = "diarandor/things/magic_deck", description = "Magic deck" }
+sprite{ id = "diarandor/things/marmite_witch", description = "Marmite witch" }
+sprite{ id = "diarandor/things/metal_blacksmith", description = "Metal blacksmith" }
+sprite{ id = "diarandor/things/steam", description = "Steam" }
+sprite{ id = "diarandor/things/switch_aureole", description = "Switch aureole" }
+sprite{ id = "diarandor/things/water_splash_effect", description = "Water splash" }
+sprite{ id = "diarandor/things/wings_evil", description = "Wings evil" }
+sprite{ id = "enemies/diarandor/crow", description = "Crow" }
+sprite{ id = "enemies/diarandor/flame", description = "Flame" }
+sprite{ id = "enemies/diarandor/iceball", description = "Iceball" }
+sprite{ id = "enemies/diarandor/slime_cyan", description = "Slime (cyan)" }
+sprite{ id = "enemies/diarandor/slime_egg", description = "Slime egg" }
+sprite{ id = "enemies/diarandor/slime_green", description = "Slime (green)" }
+sprite{ id = "enemies/diarandor/slime_green_small", description = "Small slime (green)" }
+sprite{ id = "enemies/diarandor/slime_purple", description = "Slime (purple)" }
+sprite{ id = "enemies/diarandor/slime_red", description = "Slime (red)" }
+sprite{ id = "enemies/diarandor/slime_yellow", description = "Slime (yellow)" }
 sprite{ id = "enemies/enemy_killed", description = "Enemy killed" }
-sprite{ id = "enemies/flame", description = "flame" }
-sprite{ id = "enemies/iceball", description = "iceball" }
-sprite{ id = "enemies/slime_cyan", description = "slime cyan" }
-sprite{ id = "enemies/slime_egg", description = "slime egg" }
-sprite{ id = "enemies/slime_green", description = "slime green" }
-sprite{ id = "enemies/slime_green_small", description = "slime green small" }
-sprite{ id = "enemies/slime_purple", description = "slime purple" }
-sprite{ id = "enemies/slime_red", description = "slime red" }
-sprite{ id = "enemies/slime_yellow", description = "slime yellow" }
 sprite{ id = "entities/arrow", description = "Arrow" }
 sprite{ id = "entities/big_chest", description = "Big chest" }
 sprite{ id = "entities/block", description = "Block" }
@@ -63,31 +87,8 @@ sprite{ id = "hero/sword1", description = "Hero sword 1" }
 sprite{ id = "hero/sword_stars1", description = "Hero sword stars 1" }
 sprite{ id = "hero/trail", description = "Hero trail" }
 sprite{ id = "hero/tunic1", description = "Hero tunic 1" }
-sprite{ id = "items/gem", description = "gem" }
-sprite{ id = "main_heroes/eldran", description = "Eldran" }
-sprite{ id = "main_heroes/robyne", description = "Robyne" }
-sprite{ id = "main_heroes/sword", description = "sword" }
-sprite{ id = "main_heroes/sword_electricity", description = "sword electricity" }
-sprite{ id = "main_heroes/trail", description = "trail" }
+sprite{ id = "items/gem", description = "Gem" }
 sprite{ id = "menus/solarus_logo", description = "Solarus logo" }
-sprite{ id = "shadows/shadow_big", description = "shadow big" }
-sprite{ id = "shadows/shadow_big_dynamic", description = "shadow big dynamic" }
-sprite{ id = "shadows/shadow_small", description = "shadow small" }
-sprite{ id = "things/anvil_blacksmith", description = "anvil blacksmith" }
-sprite{ id = "things/broom", description = "broom witch" }
-sprite{ id = "things/fall_on_hole_effect", description = "fall on hole" }
-sprite{ id = "things/grass_effect", description = "grass effect" }
-sprite{ id = "things/ice_block", description = "ice block" }
-sprite{ id = "things/lava_splash_effect", description = "lava splash" }
-sprite{ id = "things/long_chair", description = "long chair witch" }
-sprite{ id = "things/magic_ball", description = "magic ball" }
-sprite{ id = "things/magic_deck", description = "magic deck" }
-sprite{ id = "things/marmite_witch", description = "marmite witch" }
-sprite{ id = "things/metal_blacksmith", description = "metal blacksmith" }
-sprite{ id = "things/steam", description = "steam" }
-sprite{ id = "things/switch_aureole", description = "switch aureole" }
-sprite{ id = "things/water_splash_effect", description = "water splash" }
-sprite{ id = "things/wings_evil", description = "wings_evil" }
 
 music{ id = "diarandor/boss", description = "Boss" }
 music{ id = "diarandor/castle", description = "Castle" }
@@ -216,25 +217,25 @@ sound{ id = "wrong2", description = "wrong2" }
 sound{ id = "wrong3", description = "wrong3" }
 
 item{ id = "bomb", description = "Bomb" }
-item{ id = "gem", description = "gem" }
+item{ id = "gem", description = "Gem" }
 
-enemy{ id = "animals/chameleon", description = "chameleon" }
-enemy{ id = "citizens/blacksmith", description = "blacksmith" }
-enemy{ id = "crow", description = "crow" }
-enemy{ id = "explosion", description = "explosion" }
-enemy{ id = "flame", description = "flame" }
-enemy{ id = "iceball", description = "iceball" }
-enemy{ id = "slime_cyan", description = "slime cyan" }
-enemy{ id = "slime_egg", description = "slime egg" }
-enemy{ id = "slime_green", description = "slime green" }
-enemy{ id = "slime_green_small", description = "slime green small" }
-enemy{ id = "slime_purple", description = "slime purple" }
-enemy{ id = "slime_red", description = "slime red" }
-enemy{ id = "slime_yellow", description = "slime yellow" }
+enemy{ id = "diarandor/animals/chameleon", description = "Chameleon" }
+enemy{ id = "diarandor/citizens/blacksmith", description = "Blacksmith" }
+enemy{ id = "diarandor/crow", description = "Crow" }
+enemy{ id = "diarandor/explosion", description = "Explosion" }
+enemy{ id = "diarandor/flame", description = "Flame" }
+enemy{ id = "diarandor/iceball", description = "Iceball" }
+enemy{ id = "diarandor/slime_cyan", description = "Slime (cyan)" }
+enemy{ id = "diarandor/slime_egg", description = "Slime egg" }
+enemy{ id = "diarandor/slime_green", description = "Slime (green)" }
+enemy{ id = "diarandor/slime_green_small", description = "Small Slime (green)" }
+enemy{ id = "diarandor/slime_purple", description = "Slime (purple)" }
+enemy{ id = "diarandor/slime_red", description = "Slime (red)" }
+enemy{ id = "diarandor/slime_yellow", description = "Slime (yellow)" }
 
-entity{ id = "citizens/astrologer", description = "astrologer" }
-entity{ id = "citizens/blacksmith", description = "blacksmith" }
-entity{ id = "citizens/witch", description = "witch" }
+entity{ id = "citizens/astrologer", description = "Astrologer" }
+entity{ id = "citizens/blacksmith", description = "Blacksmith" }
+entity{ id = "citizens/witch", description = "Witch" }
 
 language{ id = "en", description = "English" }
 

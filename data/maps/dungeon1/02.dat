@@ -220,7 +220,7 @@ enemy{
   x = 24,
   y = 93,
   direction = 0,
-  breed = "crow",
+  breed = "diarandor/crow",
 }
 
 destructible{
@@ -236,7 +236,7 @@ enemy{
   x = 72,
   y = 45,
   direction = 0,
-  breed = "crow",
+  breed = "diarandor/crow",
 }
 
 enemy{
@@ -244,7 +244,7 @@ enemy{
   x = 248,
   y = 45,
   direction = 0,
-  breed = "crow",
+  breed = "diarandor/crow",
 }
 
 enemy{
@@ -252,7 +252,7 @@ enemy{
   x = 296,
   y = 93,
   direction = 0,
-  breed = "crow",
+  breed = "diarandor/crow",
 }
 
 destructible{

@@ -142,6 +142,6 @@ enemy{
   x = 160,
   y = 93,
   direction = 3,
-  breed = "citizens/blacksmith",
+  breed = "diarandor/citizens/blacksmith",
 }
 

@@ -120,7 +120,7 @@ enemy{
   x = 248,
   y = 205,
   direction = 0,
-  breed = "slime_green",
+  breed = "diarandor/slime_green",
 }
 
 enemy{
@@ -128,7 +128,7 @@ enemy{
   x = 72,
   y = 165,
   direction = 0,
-  breed = "slime_yellow",
+  breed = "diarandor/slime_yellow",
 }
 
 enemy{
@@ -136,7 +136,7 @@ enemy{
   x = 80,
   y = 37,
   direction = 0,
-  breed = "slime_cyan",
+  breed = "diarandor/slime_cyan",
 }
 
 enemy{
@@ -144,7 +144,7 @@ enemy{
   x = 208,
   y = 45,
   direction = 0,
-  breed = "slime_red",
+  breed = "diarandor/slime_red",
 }
 
 enemy{
@@ -152,6 +152,6 @@ enemy{
   x = 296,
   y = 125,
   direction = 0,
-  breed = "slime_purple",
+  breed = "diarandor/slime_purple",
 }
 

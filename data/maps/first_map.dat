@@ -457,7 +457,7 @@ enemy{
   x = 288,
   y = 61,
   direction = 0,
-  breed = "slime_green",
+  breed = "diarandor/slime_green",
 }
 
 custom_entity{
