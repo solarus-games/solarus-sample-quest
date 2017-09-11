@@ -34,7 +34,7 @@ function enemy:on_created()
   local x, y, layer = self:get_position()
   local prop = {x = x, y = y, layer = layer, direction = 0, width = 16, height = 16}
   shadow = self:get_map():create_custom_entity(prop)
-  shadow_sprite = shadow:create_sprite("shadows/shadow_huge_dynamic")
+  shadow_sprite = shadow:create_sprite("diarandor/shadows/shadow_huge_dynamic")
   -- Do not use the animation. Frames are calculated depending on the height.
   shadow_sprite:set_frame_delay(100000)
   -- Make shadow follow the crow.
@@ -377,7 +377,7 @@ function enemy:throw_item()
     local thing_sprite = self:get_sprite()
     -- Create an explosion enemy and destroy the thing.
     local x, y, layer = self:get_position()
-    local prop = {x = x, y = y, layer = hlayer, direction = 0, breed = "explosion"}
+    local prop = {x = x, y = y, layer = hlayer, direction = 0, breed = "diarandor/explosion"}
     local explosion = map:create_enemy(prop) -- Create explosion!
     -- Set custom explosion animation.
     local sprite_id = thing_sprite:get_animation_set()

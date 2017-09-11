@@ -4,7 +4,7 @@ local map = enemy:get_map()
 
 local time_to_hatch = 5000
 local can_procreate = true -- Allow the new slime to create more eggs.
-local slime_model = "slime_red" -- Type of the new slime.
+local slime_model = "diarandor/slime_red" -- Type of the new slime.
 
 -- Event called when the enemy is initialized.
 function enemy:on_created()
@@ -44,7 +44,7 @@ function enemy:fall(initial_height)
   local sprite = self:get_sprite()
   sprite:set_animation("egg")
   -- Create shadow.
-  local shadow = self:create_sprite("shadows/shadow_small")
+  local shadow = self:create_sprite("diarandor/shadows/shadow_small")
   -- Shift sprite of egg.
   local function f(t) -- Shifting function.
     return math.floor(4 * max_height * (t / fall_duration - (t / fall_duration) ^ 2) + height)

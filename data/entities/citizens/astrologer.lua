@@ -34,7 +34,7 @@ function entity:create_card()
   local refreshing_time = 10 -- Refreshing time for positions of cards, given in milliseconds.
   local a0 = 7 * math.pi / 4 -- Initial angle, in radians.
   local prop_card = {x = x, y = y, layer = layer + 1,
-    direction = 0, width = 16, height = 16, sprite = "things/magic_deck", name = "card"}
+    direction = 0, width = 16, height = 16, sprite = "diarandor/things/magic_deck", name = "card"}
   -- Initialize variables.
   local card = self:get_map():create_custom_entity(prop_card)
   local a = a0 -- Angle.

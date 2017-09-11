@@ -200,7 +200,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 3,
-  sprite = "citizens/astrologer",
+  sprite = "diarandor/citizens/astrologer",
   model = "citizens/astrologer",
 }
 
@@ -212,7 +212,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "things/magic_ball",
+  sprite = "diarandor/things/magic_ball",
 }
 
 enemy{

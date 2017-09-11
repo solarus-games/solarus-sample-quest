@@ -87,7 +87,7 @@ local function jump(properties)
     m:start(e)
   end
   -- Update sprite animations.
-  local shadow = enemy:create_sprite("shadows/shadow_huge_dynamic") -- Create shadow.
+  local shadow = enemy:create_sprite("diarandor/shadows/shadow_huge_dynamic") -- Create shadow.
   local frame_delay = math.floor( jump_duration / shadow:get_num_frames() )
   shadow:set_frame_delay(frame_delay)
   enemy:get_sprite():set_animation("jump")
@@ -169,7 +169,7 @@ function enemy:hammer_to_hero()
   sol.timer.start(enemy, 1000, function()
     self:stop_movement()
     sol.audio.play_sound("sword4")
-    local ham = enemy:create_sprite("citizens/blacksmith") -- Hammer sprite (invincible).
+    local ham = enemy:create_sprite("diarandor/citizens/blacksmith") -- Hammer sprite (invincible).
     enemy:set_invincible_sprite(ham)
     ham:set_animation("hammer_attack")
     ham:set_direction(s:get_direction())

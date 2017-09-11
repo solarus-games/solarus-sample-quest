@@ -196,7 +196,7 @@ function enemy:check_on_ground()
     x = math.floor(x/8)*8 + 4; if map:get_ground(x, y, layer) ~= "hole" then x = x + 4 end
     y = math.floor(y/8)*8 + 4; if map:get_ground(x, y, layer) ~= "hole" then y = y + 4 end
     local fall_on_hole = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
-    local sprite = fall_on_hole:create_sprite("ground_effects/fall_on_hole_effect")
+    local sprite = fall_on_hole:create_sprite("diarandor/things/fall_on_hole_effect")
     sprite:set_animation("fall_on_hole")
     self:remove()
     function sprite:on_animation_finished() fall_on_hole:remove() end
@@ -204,7 +204,7 @@ function enemy:check_on_ground()
   elseif ground == "deep_water" then
     -- Sink in water.
     local water_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
-    local sprite = water_splash:create_sprite("ground_effects/water_splash_effect")
+    local sprite = water_splash:create_sprite("diarandor/things/water_splash_effect")
     sprite:set_animation("water_splash")
     self:remove()
     function sprite:on_animation_finished() water_splash:remove() end
@@ -212,7 +212,7 @@ function enemy:check_on_ground()
   elseif ground == "lava" then
     -- Sink in lava.
     local lava_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
-    local sprite = lava_splash:create_sprite("ground_effects/lava_splash_effect")
+    local sprite = lava_splash:create_sprite("diarandor/things/lava_splash_effect")
     sprite:set_animation("lava_splash")
     self:remove()
     function sprite:on_animation_finished() lava_splash:remove() end

@@ -37,7 +37,7 @@ function enemy:on_attacking_hero(hero, enemy_sprite)
   sol.audio.play_sound("frost1")
   local x, y, layer = hero:get_position()
   local prop = {x = x, y = y + 1, layer = layer, direction = 0, width = 16, height = 16,
-    sprite = "things/ice_block"}
+    sprite = "diarandor/things/ice_block"}
   local ice = map:create_custom_entity(prop)
   ice:set_drawn_in_y_order(true)
   -- Destroy ice block after a delay and hurt the hero.

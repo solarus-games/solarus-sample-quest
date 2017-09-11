@@ -67,7 +67,7 @@ end
 -- Attack with tongue towards hero.
 function enemy:attack()
   -- Create tongue.
-  tongue = self:create_sprite("animals/chameleon")
+  tongue = self:create_sprite("diarandor/animals/chameleon")
   local dir = sprite:get_direction()
   local dx,dy = -4,-13
   if dir%2 == 0 then dx = 24*math.cos(dir*math.pi/2) -4

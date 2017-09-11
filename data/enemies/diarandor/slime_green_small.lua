@@ -37,7 +37,7 @@ function enemy:jump(jump_angle)
   self:set_invincible() -- Set invincible.
   self:set_can_attack(false) -- Do not attack hero during jump.
   -- Add a shadow sprite.
-  local shadow = self:create_sprite("shadows/shadow_small")
+  local shadow = self:create_sprite("diarandor/shadows/shadow_small")
   -- Add movement towards near the hero during the jump. The jump does not target the hero.
   -- The angle is partially random to avoid too many enemies overlapping.
   -- If there is a jump_angle, use it by default instead of the random angle towards hero.

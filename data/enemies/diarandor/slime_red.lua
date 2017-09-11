@@ -198,7 +198,7 @@ function enemy:check_on_ground()
     x = math.floor(x/8)*8 + 4; if map:get_ground(x, y, layer) ~= "hole" then x = x + 4 end
     y = math.floor(y/8)*8 + 4; if map:get_ground(x, y, layer) ~= "hole" then y = y + 4 end
     local fall_on_hole = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
-    local sprite = fall_on_hole:create_sprite("ground_effects/fall_on_hole_effect")
+    local sprite = fall_on_hole:create_sprite("diarandor/things/fall_on_hole_effect")
     sprite:set_animation("fall_on_hole")
     self:remove()
     function sprite:on_animation_finished() fall_on_hole:remove() end
@@ -206,7 +206,7 @@ function enemy:check_on_ground()
   elseif ground == "deep_water" then
     -- Sink in water.
     local water_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
-    local sprite = water_splash:create_sprite("ground_effects/water_splash_effect")
+    local sprite = water_splash:create_sprite("diarandor/things/water_splash_effect")
     sprite:set_animation("water_splash")
     self:remove()
     function sprite:on_animation_finished() water_splash:remove() end
@@ -214,7 +214,7 @@ function enemy:check_on_ground()
   elseif ground == "lava" then
     -- Sink in lava.
     local lava_splash = map:create_custom_entity({x = x, y = y, layer = layer, direction = 0})
-    local sprite = lava_splash:create_sprite("ground_effects/lava_splash_effect")
+    local sprite = lava_splash:create_sprite("diarandor/things/lava_splash_effect")
     sprite:set_animation("lava_splash")
     self:remove()
     function sprite:on_animation_finished() lava_splash:remove() end
@@ -246,7 +246,7 @@ function enemy:throw_fireball()
   a = a + a2 -- Modify angle with random perturbation.
   local x, y, layer = self:get_position()
   local prop = {x = x, y = y, layer = layer, direction = 0,
-    width = 8, height = 8, sprite = "enemies/slime_red"}
+    width = 8, height = 8, sprite = "enemies/diarandor/slime_red"}
   local fireball = map:create_custom_entity(prop)
   fireball:get_sprite():set_animation("fireball")
   local m = sol.movement.create("straight")
@@ -258,7 +258,7 @@ function enemy:throw_fireball()
     fireball:remove()
   end)
   -- Create shadow.
-  local shadow = fireball:create_sprite("shadows/shadow_small")
+  local shadow = fireball:create_sprite("diarandor/shadows/shadow_small")
   -- Shift sprite of fireball.
   local function f(t) -- Shifting function.
     return math.floor(4 * max_height * (t / fireball_duration - (t / fireball_duration) ^ 2))
@@ -292,9 +292,9 @@ function enemy:create_egg()
   sprite:set_animation("jump")
   sol.timer.start(self, 250, function() sprite:set_animation("stopped") end)
   local x, y, layer = self:get_position()
-  local prop = {x = x, y = y, layer = layer, direction = 0, breed = "slime_egg"}
+  local prop = {x = x, y = y, layer = layer, direction = 0, breed = "diarandor/slime_egg"}
   local egg = map:create_enemy(prop)
-  egg:set_slime_model("slime_red")
+  egg:set_slime_model("diarandor/slime_red")
   egg:fall() -- Falling animation.
   egg:set_can_procreate(false) -- Do not allow more procreation from the new slime.
   return egg

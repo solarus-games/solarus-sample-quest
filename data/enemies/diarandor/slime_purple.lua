@@ -28,10 +28,10 @@ function enemy:on_created()
   local x, y, layer = self:get_position()
   local prop = {x = x, y = y, layer = layer, direction = 0, width = 16, height = 16}
   wings = map:create_custom_entity(prop)
-  left_wing = wings:create_sprite("things/wings_evil")
-  right_wing = wings:create_sprite("things/wings_evil")
+  left_wing = wings:create_sprite("diarandor/things/wings_evil")
+  right_wing = wings:create_sprite("diarandor/things/wings_evil")
   right_wing:synchronize(left_wing)
-  local shadow = wings:create_sprite("shadows/shadow_big_dynamic", "shadow") -- Add a shadow sprite.
+  local shadow = wings:create_sprite("diarandor/shadows/shadow_big_dynamic", "shadow") -- Add a shadow sprite.
   sol.timer.start(wings, 1, function()
     if not enemy:exists() then
       wings:remove() -- Remove wings if the enemy has disappeared.
@@ -240,7 +240,7 @@ function enemy:fall()
       local slime = self:get_map():create_enemy({x=x, y=y, layer=layer, direction = 0, breed = "slime_green"})
       local sprite = slime:get_sprite()
       slime:remove_sprite(sprite)
-      slime:create_sprite("enemies/slime_purple")
+      slime:create_sprite("enemies/diarandor/slime_purple")
       slime:on_created() -- Restart "on_created" event to redefine events on new sprite.
       slime:set_split_when_hurt(false) -- Do not allow to split.
       self:remove()
@@ -261,7 +261,7 @@ function enemy:create_egg()
   local x, y, layer = self:get_position()
   local prop = {x = x, y = y, layer = layer, direction = 0, breed = "slime_egg"}
   local egg = map:create_enemy(prop)
-  egg:set_slime_model("slime_purple")
+  egg:set_slime_model("diarandor/slime_purple")
   egg:fall(flying_height) -- Falling animation.
   egg:set_can_procreate(false) -- Do not allow more procreation from the new slime.
   return egg
@@ -274,7 +274,7 @@ function enemy:get_egg_enabled() return needs_put_egg end
 -- Wind attack.
 function enemy:start_wind()
   state = "wind"
-  local wind = wings:create_sprite("enemies/slime_purple", "wind")
+  local wind = wings:create_sprite("enemies/diarandor/slime_purple", "wind")
   wind:set_animation("wind")
   local h = map:get_hero()
   sol.audio.play_sound("wings1")

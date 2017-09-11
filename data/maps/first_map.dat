@@ -468,7 +468,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 2,
-  sprite = "citizens/witch",
+  sprite = "diarandor/citizens/witch",
   model = "citizens/witch",
 }
 
@@ -480,7 +480,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "things/broom",
+  sprite = "diarandor/things/broom",
   model = "things/broom",
 }
 
@@ -491,7 +491,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "things/marmite_witch",
+  sprite = "diarandor/things/marmite_witch",
   model = "things/marmite",
 }
 
@@ -503,7 +503,7 @@ custom_entity{
   width = 16,
   height = 8,
   direction = 0,
-  sprite = "things/long_chair",
+  sprite = "diarandor/things/long_chair",
 }
 
 enemy{
@@ -594,6 +594,6 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "things/steam",
+  sprite = "diarandor/things/steam",
 }
 

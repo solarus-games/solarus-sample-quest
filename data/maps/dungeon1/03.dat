@@ -191,7 +191,7 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 2,
-  sprite = "citizens/blacksmith",
+  sprite = "diarandor/citizens/blacksmith",
   model = "citizens/blacksmith",
 }
 
@@ -215,7 +215,7 @@ custom_entity{
   width = 64,
   height = 32,
   direction = 0,
-  sprite = "things/anvil_blacksmith",
+  sprite = "diarandor/things/anvil_blacksmith",
 }
 
 custom_entity{
@@ -226,7 +226,7 @@ custom_entity{
   width = 32,
   height = 16,
   direction = 0,
-  sprite = "things/metal_blacksmith",
+  sprite = "diarandor/things/metal_blacksmith",
 }
 
 pickable{
@@ -284,6 +284,6 @@ custom_entity{
   width = 16,
   height = 16,
   direction = 0,
-  sprite = "things/steam",
+  sprite = "diarandor/things/steam",
 }
 
