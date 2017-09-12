@@ -1,6 +1,6 @@
 animation{
   name = "flying",
-  src_image = "main_heroes/arrow1.png",
+  src_image = "diarandor/heroes/arrow1.png",
   directions = {
     { x = 0, y = 4, frame_width = 16, frame_height = 8, origin_x = 8, origin_y = 4 },
     { x = 4, y = 16, frame_width = 8, frame_height = 16, origin_x = 4, origin_y = 8 },
@@ -10,7 +10,7 @@ animation{
 }
 animation{
   name = "reached_obstacle",
-  src_image = "main_heroes/arrow1.png",
+  src_image = "diarandor/heroes/arrow1.png",
   frame_delay = 50,
   frame_to_loop_on = 7,
   directions = {
