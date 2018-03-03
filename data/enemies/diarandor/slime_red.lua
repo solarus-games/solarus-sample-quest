@@ -153,7 +153,7 @@ function enemy:jump()
     end
   end)
   -- Add a shadow sprite.
-  local shadow = self:create_sprite("shadows/shadow_big_dynamic", "shadow")
+  local shadow = self:create_sprite("diarandor/shadows/shadow_big_dynamic", "shadow")
   local new_frame_delay = math.floor(jump_duration/shadow:get_num_frames())
   shadow:set_frame_delay(new_frame_delay)
   -- Add movement towards near the hero during the jump. The jump does not target the hero.
@@ -278,7 +278,7 @@ end
 
 -- Create fire entity in some position of the map.
 function enemy:create_flame(x, y, layer)
-  local prop = {x = x, y = y, layer = layer, direction = 0, breed = "flame"}
+  local prop = {x = x, y = y, layer = layer, direction = 0, breed = "diarandor/flame"}
   local flame = map:create_enemy(prop)
   flame:set_damage(fire_damage)
 end

@@ -237,9 +237,10 @@ function enemy:fall()
     if shift == 0 then
       -- Replace by a normal purple slime.
       local x,y,layer = self:get_position()
-      local slime = self:get_map():create_enemy({x=x, y=y, layer=layer, direction = 0, breed = "slime_green"})
+      local slime = self:get_map():create_enemy({x=x, y=y, layer=layer, direction = 0, 
+        breed = "diarandor/slime_green"})
       local sprite = slime:get_sprite()
-      slime:remove_sprite(sprite)
+      if sprite then slime:remove_sprite(sprite) end
       slime:create_sprite("enemies/diarandor/slime_purple")
       slime:on_created() -- Restart "on_created" event to redefine events on new sprite.
       slime:set_split_when_hurt(false) -- Do not allow to split.
@@ -259,7 +260,7 @@ function enemy:create_egg()
   sprite:set_animation("jump")
   sol.timer.start(self, 250, function() sprite:set_animation("walking") end)
   local x, y, layer = self:get_position()
-  local prop = {x = x, y = y, layer = layer, direction = 0, breed = "slime_egg"}
+  local prop = {x = x, y = y, layer = layer, direction = 0, breed = "diarandor/slime_egg"}
   local egg = map:create_enemy(prop)
   egg:set_slime_model("diarandor/slime_purple")
   egg:fall(flying_height) -- Falling animation.

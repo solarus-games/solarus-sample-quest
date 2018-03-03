@@ -150,7 +150,7 @@ function enemy:jump()
     end
   end)
   -- Add a shadow sprite.
-  local shadow = self:create_sprite("shadows/shadow_big_dynamic", "shadow")
+  local shadow = self:create_sprite("diarandor/shadows/shadow_big_dynamic", "shadow")
   local new_frame_delay = math.floor(jump_duration/shadow:get_num_frames())
   shadow:set_frame_delay(new_frame_delay)
   -- Add movement towards near the hero during the jump. The jump does not target the hero.
@@ -258,7 +258,7 @@ function enemy:on_hurt()
   if not split_when_hurt then return
   else
     local x, y, layer = self:get_position()
-    local prop = {x = x, y = y, layer = layer, direction = 0, breed = "slime_green_small"}
+    local prop = {x = x, y = y, layer = layer, direction = 0, breed = "diarandor/slime_green_small"}
     local s1 = map:create_enemy(prop)
     local s2 = map:create_enemy(prop)
     local s3 = map:create_enemy(prop)

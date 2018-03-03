@@ -237,7 +237,7 @@ function enemy:throw_iceball()
   sprite:set_animation("jump")
   sol.timer.start(self, 150, function() sprite:set_animation("stopped") end)
   local x, y, layer = self:get_position()
-  local prop = {x = x, y = y, layer = layer, direction = 0, breed = "iceball"}
+  local prop = {x = x, y = y, layer = layer, direction = 0, breed = "diarandor/iceball"}
   local speed = 60 -- Speed for the fireballs
   local function create_iceball(angle)
     local a = angle

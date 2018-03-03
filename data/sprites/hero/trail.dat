@@ -1,6 +1,6 @@
 animation{
   name = "running",
-  src_image = "main_heroes/running.png",
+  src_image = "diarandor/heroes/running.png",
   frame_delay = 75,
   frame_to_loop_on = 0,
   directions = {
