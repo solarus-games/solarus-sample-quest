@@ -242,3 +242,5 @@ language{ id = "en", description = "English" }
 font{ id = "8_bit", description = "8 bit" }
 font{ id = "minecraftia", description = "Minecraftia" }
 
+shader{ id = "sepia", description = "sepia" }
+
